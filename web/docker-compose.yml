@@ -1,0 +1,27 @@
+php:
+  image: magecom/php:dev56
+#  image: magecom/php:7
+  volumes:
+    - .:/var/www
+  links:
+    - mysql
+nginx:
+  image: magecom/nginx
+  ports:
+    - 80:80
+  links:
+    - php
+  volumes_from:
+    - php
+mysql:
+  image: magecom/maria
+  environment:
+    - MARIADB_PASS=admin
+  #volumes:
+   #   - /var/dbs:/var/lib/mysql
+phpmyadmin:
+  image: corbinu/docker-phpmyadmin
+  ports:
+    - "8002:80"
+  links:
+    - mysql

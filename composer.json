@@ -1,0 +1,6 @@
+{
+    "require": {
+        "symfony/http-foundation": "^3.2",
+        "symfony/class-loader": "2.1.*"
+    }
+}
