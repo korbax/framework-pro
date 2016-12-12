@@ -14,6 +14,7 @@ class ComposerStaticInitb9c53491aed6f99585a58fe9f8bd0838
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\Routing\\' => 26,
             'Symfony\\Component\\HttpFoundation\\' => 33,
         ),
     );
@@ -22,6 +23,10 @@ class ComposerStaticInitb9c53491aed6f99585a58fe9f8bd0838
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\Routing\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/routing',
         ),
         'Symfony\\Component\\HttpFoundation\\' => 
         array (
